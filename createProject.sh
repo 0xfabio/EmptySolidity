@@ -58,10 +58,10 @@ doIt() {
   cp -R "$emptyDir" "$pName" &&
   cd "$pDir/$pName" &&
   rm -rf .git &&
+  rm createProject.sh && 
   git init &&
   git add . &&
   git commit -m "Initial Commit" &&
-  rm createProject.sh && 
   echo "Successfully created Project!!"
 }
 
